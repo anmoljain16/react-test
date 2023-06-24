@@ -7,7 +7,7 @@ function Form({ userInput, onFormSubmit }) {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (inputValue.trim() === '') {
-            setError('Input cannot be empty.');
+            setError('Please write something on input.');
         } else {
             setError('');
             onFormSubmit(inputValue);
